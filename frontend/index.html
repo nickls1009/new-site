@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Nickolas Sigler - Brand and Product Design</title>
+      <link rel="stylesheet" href="/static/css/reset.css">
+      <link rel="stylesheet" href="/static/css/index.css">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+  </head>
+  <body>
+      <div id="page-wrapper">
+            <nav id="primary-nav">
+                <a href="/" class="nav__link" data-link>Home<span class="material-icons">east</span></a>
+                <a href="/aloompa" class="nav__link" data-link>Aloompa</a>
+                <a href="/asurion" class="nav__link" data-link>Asurion</a>
+            </nav>
+            <div id="content">
+                <div id="app-bar">
+                    <span class="material-icons menu-icon" onclick="myFunction()">menu</span>
+                    <p class="identity">Nickolas Sigler</p>
+                </div>
+                <div id="app"></div>
+            </div>
+      </div>
+      <script type="module" src="/static/js/index.js"></script>
+
+      <script>
+        function myFunction() {
+          var x = document.getElementById("primary-nav");
+          if (x.style.display === "none") {
+            x.style.display = "flex";
+          } else {
+            x.style.display = "none";
+          }
+        }
+        </script>
+      
+  </body>
+</html>
